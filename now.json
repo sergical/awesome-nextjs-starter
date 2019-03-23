@@ -1,0 +1,9 @@
+{
+  "name": "awesome-nextjs-starter",
+  "version": 1,
+  "alias": "https://awesome-nextjs-starter.now.sh",
+  "env": {
+    "NODE_ENV": "production",
+    "API_ENDPOINT": "https://api.graph.cool/simple/v1/cixmkt2ul01q00122mksg82pn"
+  }
+}
