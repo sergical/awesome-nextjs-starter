@@ -1,5 +1,6 @@
 const express = require('express');
 const next = require('next');
+const cors = require('cors');
 const sitemapAndRobots = require('./sitemapAndRobots');
 
 const dev = process.env.NODE_ENV !== 'production';
@@ -16,6 +17,7 @@ const handle = app.getRequestHandler();
 // Nextjs's server prepared
 app.prepare().then(() => {
   const server = express();
+  server.use(cors());
 
   sitemapAndRobots({ server });
 
