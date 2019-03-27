@@ -9,7 +9,7 @@ import {
   Form,
   FormLayout,
 } from '@shopify/polaris';
-import fileDownload from 'react-file-download';
+import fileDownload from 'js-file-download';
 
 export default function FileForm() {
   const [text, setText] = useState('');
